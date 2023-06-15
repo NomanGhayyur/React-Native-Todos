@@ -16,12 +16,11 @@ import {
   FlatList,
   TouchableOpacity,
 } from "react-native";
-import { onAuthStateChanged, signOut, User } from "firebase/auth";
+import { signOut } from "firebase/auth";
 import { FIREBASE_AUTH, FIRESTORE_DB } from "../../firebaseConfig";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Entypo } from "@expo/vector-icons";
 import { NavigationProp } from "@react-navigation/native";
-import Details from "./Details";
 
 export interface Todo {
   title: string;
